@@ -1,5 +1,5 @@
 from pandas_datareader import Options
-import Fin_Functions
+import mean
 import A_Kmeans
 import B_Momentum
 import datetime as dt
@@ -53,7 +53,7 @@ outputs = {
 if __name__=='__main__':
     #Define the market 
     # Options 'DJI', 'S&P500' and 'ASX'
-    market = Fin_Functions.assets (userinput["market"])
+    market = mean.assets (userinput["market"])
     # Define the time to evaluate   
     start = userinput['start']
     end = userinput['end']
